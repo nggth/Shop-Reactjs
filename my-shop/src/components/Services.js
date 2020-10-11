@@ -30,7 +30,8 @@ export default class Services extends Component {
     render() {
         return (
             <section className="services" >
-               <Title title='services' />
+                {/* hiển thị trên trang */}
+               <Title title='services' /> 
                <div className="services-center">
                    {this.state.services.map((item, index) =>{
                        return <article key={index} className="services">

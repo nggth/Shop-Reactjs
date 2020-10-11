@@ -5,10 +5,8 @@ import Home  from "./pages/Home";
 import Clothes  from "./pages/Clothes";
 import SingleClothes  from "./pages/SingleClothes";
 import Error  from "./pages/Error";
-
-import {Route, Switch} from 'react-router-dom';
-
 import Navbar from "./components/Navbar"; 
+import {Route, Switch} from 'react-router-dom';
 
 function App() {
   return (

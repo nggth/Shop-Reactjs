@@ -1,13 +1,11 @@
 import React from 'react';
 import Hero from "../components/Hero";
-import Banner from '../components/Banner'
-import {Link} from 'react-router-dom'
+import Banner from '../components/Banner';
+import {Link} from 'react-router-dom';
 import Services from '../components/Services';
-import FeatureClothes from '../components/FeaturedClothes';
-import Button from '../components/StyledHero';
+import FeaturedClothes from '../components/FeaturedClothes';
 
-
-export default function Home() {
+const home = () => {
     return (
     <>
         <Hero>
@@ -18,8 +16,9 @@ export default function Home() {
             </Banner>
         </Hero>
         <Services />
-        <FeatureClothes />
-        <Button/>
+        <FeaturedClothes />
     </>
     );
-}
+};
+
+export default home;
