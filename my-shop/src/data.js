@@ -31,7 +31,7 @@ export default [
       size: 200,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal",
       extras: [
         "Flowy fabric." ,
         "Short design. Pleated details.",
@@ -71,6 +71,10 @@ export default [
       ]
     }
   },
+
+
+
+  
   {
     sys: {
       id: "2"
@@ -83,7 +87,7 @@ export default [
       size: 250,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Pullover is the oversized sweater everyone is looking for. This pullover comes in a soft shade of sage green with a subtle v neckline and raw edge seams.",
       extras: [
         "Flowy fabric. Metallic thread detail.",
         "Flared design. Rounded neck. V-neck. Long puffed sleeves.",
@@ -135,7 +139,7 @@ export default [
       size: 300,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
       extras: [
         "Classic collar.",
         "Long sleeve with buttoned cuffs. Elastic waist.",
@@ -189,7 +193,7 @@ export default [
       size: 400,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
       extras: [
         "The classic non-stretchable denim for those who search for a timeless style.",
         "Culotte design. Cropped design. High waist. Medium wash.",
@@ -243,7 +247,7 @@ export default [
       size: 300,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "The Zarina Collared Dress is the perfect casual yet cute dress for fall! In a beautiful olive green color, this babydoll style dress features a collar and button up front.",
       extras: [
         "Pleated fabric. Recycled polyester blend fabric.",
         "Short design. Flared design. Flowers print. Ruched neck.",
@@ -296,7 +300,7 @@ export default [
       size: 350,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Get to Moab as quick as you can throw this long sleeve on! A loose fitting, cozy ivory pullover with orange colorful Moab desert silhouette is all you'll find here! ",
       extras: [
         "Flowy textured fabric.",
         "Midi design. Pleated details. V-neck.",
@@ -348,7 +352,7 @@ export default [
       size: 400,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Let's be honest, this dress is for anyone with a love for comfy, cute, and fall! This golden-orange dress features a drawstring waist tie, hip pockets, and long sleeves. ",
       extras: [
         "Flared design. Floral print. V-neck.",
         "Short sleeve. Fitted waist.",
@@ -400,7 +404,7 @@ export default [
       size: 500,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Nothing to wear isn't in our vocabulary anymore. Be the reason you get up in the morning, and whatever you do; wear the dress. The Bonneville Hills Maxi is everything velvet and bold. ",
       extras: [
         "Flared design. Short design. V-neck. Short ruched sleeves.",
         "Back length 69.0 cm."
@@ -409,7 +413,7 @@ export default [
         {
           fields: {
             file: {
-              url: img8
+              url: img8 //first pic at Home in FeaturesClothes and this code in Cloth?
             }
           }
         },
@@ -449,7 +453,7 @@ export default [
       size: 500,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "It's the small details in life that make it beautiful, the SALT Arcadia Heights Dress has enough details for years of gorgeous moments. High-quality fabric combined with a pintuck bodice, butterfly sleeves, and textured dots give it a regal feeling. ",
       extras: [
         "Flowy fabric. Metallic thread detail.",
         "Flared design. Rounded neck. V-neck. Long puffed sleeves.",
@@ -501,7 +505,7 @@ export default [
       size: 550,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Taylor Jane would be a beautiful everyday dress or a stunning dress for a special event. The combination of modest elegance, comfort, and class will have you turning to this wrap maxi dress for all occasions and anything in between!",
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -555,7 +559,7 @@ export default [
       size: 600,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        " Look fashionable and comfortable with exaggerated wide legs, elastic waist, side zipper for easy on/off and of course, pockets. Make your own vibe with a removable waist tie any day of the week. ",
       extras: [
         "Classic collar.",
         "Long sleeve with buttoned cuffs. Elastic waist.",
@@ -609,7 +613,7 @@ export default [
       size: 700,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Back, and beautiful as ever, the Taylor Jane is here to keep you trendy and comfortable during any season! A gathered elastic waist with a working tie, paired with short, cuffed sleeves.",
       extras: [
         "Flared design. Floral print. V-neck.",
         "Short sleeve. Fitted waist.",
@@ -661,7 +665,7 @@ export default [
       size: 1000,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Let's be honest, this dress is for anyone with a love for comfy, cute, and fall! This golden-orange dress features a drawstring waist tie, hip pockets, and long sleeves. ",
       extras: [
         "Flowy fabric." ,
         "Short design. Pleated details.",

@@ -15,7 +15,6 @@ const Cloth = memo(({ cloth }) => {
             <img src={images[0] || defaultImg} alt="single cloth" />
             <div className="price-top">
             <h6>${price}</h6>
-            <p>per clothes</p>
             </div>
             <Link to={`/clothes/${slug}`} className="btn-primary cloth-link">
             features
