@@ -2,7 +2,7 @@ import slide1 from "./images/slide1.jpg";
 import slide2 from "./images/slide2.jpg";
 import slide3 from "./images/slide3.jpg";
 import slide4 from "./images/slide4.jpg";
-import img1 from "./images/pic1.jpg";
+//import img1 from "./images/pic1.jpg";
 import img2 from "./images/pic2.jpg";
 import img3 from "./images/pic3.jpg";
 import img4 from "./images/pic4.jpg";
@@ -14,8 +14,14 @@ import img9 from "./images/pic9.jpg";
 import img10 from "./images/pic10.jpg";
 import img11 from "./images/pic11.jpg";
 import img12 from "./images/pic12.jpg";
-
-
+import img13 from "./images/pic13.jpg";
+import img14 from "./images/pic14.jpg";
+import img15 from "./images/pic15.jpg";
+import img16 from "./images/pic16.jpg";
+import img17 from "./images/pic17.jpg";
+import img18 from "./images/pic18.jpg";
+import img19 from "./images/pic19.jpg";
+import img20 from "./images/pic20.jpg";
 
 
 export default [
@@ -27,8 +33,10 @@ export default [
       name: "single economy",
       slug: "single-economy",
       type: "single",
-      price: "100,000 VNĐ",
-      size: 200,
+      price: 100000,
+      sizeM: true,
+      sizeL: true,
+      capacity: 3,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal",
@@ -43,7 +51,7 @@ export default [
         {
           fields: {
             file: {
-              url: img1
+              url: img13
             }
           }
         },
@@ -71,10 +79,6 @@ export default [
       ]
     }
   },
-
-
-
-  
   {
     sys: {
       id: "2"
@@ -83,8 +87,10 @@ export default [
       name: "single basic",
       slug: "single-basic",
       type: "single",
-      price: "150,000 VNĐ",
-      size: 250,
+      price: 150000,
+      sizeM: true,
+      sizeL: true,
+      capacity: 5,
       featured: false,
       description:
         "Pullover is the oversized sweater everyone is looking for. This pullover comes in a soft shade of sage green with a subtle v neckline and raw edge seams.",
@@ -135,8 +141,10 @@ export default [
       name: "single standard",
       slug: "single-standard",
       type: "single",
-      price: "250,000 VNĐ",
-      size: 300,
+      price: 250000,
+      sizeM: false,
+      sizeL: true,
+      capacity: 1,
       featured: false,
       description:
         "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
@@ -189,8 +197,10 @@ export default [
       name: "single deluxe",
       slug: "single-deluxe",
       type: "single",
-      price: "300,000 VNĐ",
-      size: 400,
+      price: 300000,
+      sizeM: true,
+      sizeL: true,
+      capacity: 3,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
@@ -243,8 +253,10 @@ export default [
       name: "double economy",
       slug: "double-economy",
       type: "double",
-      price: "200,000 VNĐ",
-      size: 300,
+      price: 200000,
+      sizeM: true,
+      sizeL: true,
+      capacity: 3,
       featured: false,
       description:
         "The Zarina Collared Dress is the perfect casual yet cute dress for fall! In a beautiful olive green color, this babydoll style dress features a collar and button up front.",
@@ -296,8 +308,10 @@ export default [
       name: "double basic",
       slug: "double-basic",
       type: "double",
-      price: "250,000 VNĐ",
-      size: 350,
+      price: 250000,
+      sizeM: false,
+      sizeL: true,
+      capacity: 4,
       featured: false,
       description:
         "Get to Moab as quick as you can throw this long sleeve on! A loose fitting, cozy ivory pullover with orange colorful Moab desert silhouette is all you'll find here! ",
@@ -348,8 +362,10 @@ export default [
       name: "double standard",
       slug: "double-standard",
       type: "double",
-      price: "300,000 VNĐ",
-      size: 400,
+      price: 300000,
+      sizeM: true,
+      sizeL: false,
+      capacity: 6,
       featured: false,
       description:
         "Let's be honest, this dress is for anyone with a love for comfy, cute, and fall! This golden-orange dress features a drawstring waist tie, hip pockets, and long sleeves. ",
@@ -400,8 +416,10 @@ export default [
       name: "double deluxe",
       slug: "double-deluxe",
       type: "double",
-      price: "400,000 VNĐ",
-      size: 500,
+      price: 400000,
+      sizeM: true,
+      sizeL: true,
+      capacity: 2,
       featured: true,
       description:
         "Nothing to wear isn't in our vocabulary anymore. Be the reason you get up in the morning, and whatever you do; wear the dress. The Bonneville Hills Maxi is everything velvet and bold. ",
@@ -449,8 +467,10 @@ export default [
       name: "family economy",
       slug: "family-economy",
       type: "family",
-      price: "300,000 VNĐ",
-      size: 500,
+      price: 300000,
+      sizeM: true,
+      sizeL: false,
+      capacity: 3,
       featured: false,
       description:
         "It's the small details in life that make it beautiful, the SALT Arcadia Heights Dress has enough details for years of gorgeous moments. High-quality fabric combined with a pintuck bodice, butterfly sleeves, and textured dots give it a regal feeling. ",
@@ -501,8 +521,10 @@ export default [
       name: "family basic",
       slug: "family-basic",
       type: "family",
-      price: "350,000 VNĐ",
-      size: 550,
+      price: 150000,
+      sizeM: false,
+      sizeL: true,
+      capacity: 4,
       featured: false,
       description:
         "Taylor Jane would be a beautiful everyday dress or a stunning dress for a special event. The combination of modest elegance, comfort, and class will have you turning to this wrap maxi dress for all occasions and anything in between!",
@@ -555,8 +577,10 @@ export default [
       name: "family standard",
       slug: "family-standard",
       type: "family",
-      price: "400,000 VNĐ",
-      size: 600,
+      price: 400000,
+      sizeM: true,
+      sizeL: false,
+      capacity: 5,
       featured: false,
       description:
         " Look fashionable and comfortable with exaggerated wide legs, elastic waist, side zipper for easy on/off and of course, pockets. Make your own vibe with a removable waist tie any day of the week. ",
@@ -609,8 +633,10 @@ export default [
       name: "family deluxe",
       slug: "family-deluxe",
       type: "family",
-      price: "500,000 VNĐ",
-      size: 700,
+      price: 500000,
+      sizeM: true,
+      sizeL: false,
+      capacity: 6,
       featured: true,
       description:
         "Back, and beautiful as ever, the Taylor Jane is here to keep you trendy and comfortable during any season! A gathered elastic waist with a working tie, paired with short, cuffed sleeves.",
@@ -661,8 +687,10 @@ export default [
       name: "presidential",
       slug: "presidential-cloth",
       type: "presidential",
-      price: "600,000 VNĐ",
-      size: 1000,
+      price: 600000,
+      sizeM: false,
+      sizeL: true,
+      capacity: 10,
       featured: true,
       description:
         "Let's be honest, this dress is for anyone with a love for comfy, cute, and fall! This golden-orange dress features a drawstring waist tie, hip pockets, and long sleeves. ",
@@ -704,5 +732,382 @@ export default [
         }
       ]
     }
-  }
+  },
+  {
+    sys: {
+      id: "14"
+    },
+    fields: {
+      name: "presidential",
+      slug: "presidential-cloth",
+      type: "presidential",
+      price: 650000,
+      sizeM: true,
+      sizeL: true,
+      capacity: 3,
+      featured: false,
+      description:
+        "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
+      extras: [
+        "The classic non-stretchable denim for those who search for a timeless style.",
+        "Culotte design. Cropped design. High waist. Medium wash.",
+        "Denim style cotton fabric. Sustainable cotton fabric.",
+        "Two front pockets. Two patch pockets on the back.",
+        "Loops. Zip and one button fastening.",
+        "Inside leg measurement 70.2 cm.",
+        "Side length 103.0 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img14
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "15"
+    },
+    fields: {
+      name: "family deluxe",
+      slug: "family-deluxe",
+      type: "family",
+      price: 300000,
+      sizeM: true,
+      sizeL: false,
+      capacity: 3,
+      featured: false,
+      description:
+        "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
+      extras: [
+        "The classic non-stretchable denim for those who search for a timeless style.",
+        "Culotte design. Cropped design. High waist. Medium wash.",
+        "Denim style cotton fabric. Sustainable cotton fabric.",
+        "Two front pockets. Two patch pockets on the back.",
+        "Loops. Zip and one button fastening.",
+        "Inside leg measurement 70.2 cm.",
+        "Side length 103.0 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img15
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "16"
+    },
+    fields: {
+      name: "family basic",
+      slug: "family-basic",
+      type: "family",
+      price: 350000,
+      sizeM: true,
+      sizeL: true,
+      capacity: 3,
+      featured: false,
+      description:
+        "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
+      extras: [
+        "The garments labelled as Committed are products that have been produced using sustainable fibres or processes, reducing their environmental impact.",
+        "Therefore increase the number of sustainable garments in the collection.",
+        "Inside leg measurement 70.2 cm.",
+        "Side length 103.0 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img16
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "17"
+    },
+    fields: {
+      name: "family standard",
+      slug: "family-standard",
+      type: "family",
+      price: 350000,
+      sizeM: true,
+      sizeL: true,
+      capacity: 3,
+      featured: false,
+      description:
+        "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
+      extras: [
+        "The garments labelled as Committed are products that have been produced using sustainable fibres or processes, reducing their environmental impact.",
+        "Therefore increase the number of sustainable garments in the collection.",
+        "Inside leg measurement 70.2 cm.",
+        "Side length 103.0 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img17
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "18"
+    },
+    fields: {
+      name: "single economy",
+      slug: "single-economy",
+      type: "single",
+      price: 350000,
+      sizeM: false,
+      sizeL: true,
+      capacity: 3,
+      featured: false,
+      description:
+        "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
+      extras: [
+        "The garments labelled as Committed are products that have been produced using sustainable fibres or processes, reducing their environmental impact.",
+        "Therefore increase the number of sustainable garments in the collection.",
+        "Inside leg measurement 70.2 cm.",
+        "Side length 103.0 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img18
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "19"
+    },
+    fields: {
+      name: "family basic",
+      slug: "family-basic",
+      type: "family",
+      price: 150000,
+      sizeM: true,
+      sizeL: true,
+      capacity: 3,
+      featured: false,
+      description:
+        "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
+      extras: [
+        "The garments labelled as Committed are products that have been produced using sustainable fibres or processes, reducing their environmental impact.",
+        "Therefore increase the number of sustainable garments in the collection.",
+        "Inside leg measurement 70.2 cm.",
+        "Side length 103.0 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img19
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "20"
+    },
+    fields: {
+      name: "single deluxe",
+      slug: "single-deluxe",
+      type: "single",
+      price: 350000,
+      sizeM: true,
+      sizeL: false,
+      capacity: 3,
+      featured: false,
+      description:
+        "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
+      extras: [
+        "The garments labelled as Committed are products that have been produced using sustainable fibres or processes, reducing their environmental impact.",
+        "Therefore increase the number of sustainable garments in the collection.",
+        "Inside leg measurement 70.2 cm.",
+        "Side length 103.0 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img20
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
 ];

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import defaultBcg from '../images/pic1.jpg';
-import Hero from '../components/Hero';
+//import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import { ClothesContext } from '../context';
@@ -37,7 +37,8 @@ export default class SingleClothes extends Component {
       const {
         name,
         description,
-        size,
+        sizeM,
+        sizeL,
         price,
         extras,
         images
@@ -68,7 +69,8 @@ export default class SingleClothes extends Component {
               <article className="info">
                 <h3>info</h3>
                 <h6>price : {price}</h6>
-                <h6>size : {size} SQFT</h6>
+                <h6>{sizeM ? "have size M" : "no have size M"}</h6>
+                <h6>{sizeL ? "have size L" : "no have size L"}</h6>
               </article>
             </div>
           </section>

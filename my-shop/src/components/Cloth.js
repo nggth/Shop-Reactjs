@@ -14,7 +14,7 @@ const Cloth = memo(({ cloth }) => {
         <div className="img-container">
             <img src={images[0] || defaultImg} alt="single cloth" />
             <div className="price-top">
-            <h6>${price}</h6>
+            <h6>{price} VNĐ</h6>
             </div>
             <Link to={`/clothes/${slug}`} className="btn-primary cloth-link">
             features
@@ -31,7 +31,7 @@ Cloth.propTypes = {
         name: PropTypes.string.isRequired,
         slug: PropTypes.string.isRequired,
         images: PropTypes.arrayOf(PropTypes.string).isRequired,
-        price: PropTypes.number.isRequired //string?
+        price: PropTypes.number.isRequired
     })
 };
 export default Cloth;

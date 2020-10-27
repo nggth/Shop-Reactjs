@@ -1,88 +1,3 @@
-// import React, { Component } from 'react';
-// import items from './data';
-
-// const ClothesContext = React.createContext();
-
-// // <ClothesContext.Provider value={'hello'}
-// export default class ClothesProvider extends Component {
-//     state = {
-//         clothes: [],
-//         sortedClothes: [],
-//         featuredClothes: [],
-//         loading: true,
-
-//         type: "all",
-//         capacity: 1,
-//         price: 0,
-//         minPrice: 0,
-//         maxPrice: 0,
-//         minSize: 0,
-//         maxSize: 0
-//     };
-//     //getData
-//     componentDidMount(){
-//         //this.getData
-//         let clothes = this.formatData(items);
-//         let featuredClothes = clothes.filter(cloth => cloth.featured === true);
-//         //
-//         let maxPrice = Math.max(...clothes.map(item => item.price));
-//         let maxSize = Math.max(...clothes.map(item => item.size));
-//         this.setState({
-//             clothes,
-//             featuredClothes,
-//             sortedClothes: clothes,
-//             loading: false,
-//              //
-//             price: maxPrice,
-//             maxPrice,
-//             maxSize
-//         });
-//     }
-
-//     formatData(items){
-//         let tempItems = items.map(item => {
-//             let id = item.sys.id;
-//             let images = item.fields.images.map(image => image.fields.file.url);
-            
-//             let cloth = { ...item.fields, images, id };
-//             return cloth;
-//         });
-//         return tempItems;
-//     }   
-
-//     getCloth = slug => {
-//         let tempClothes = [...this.state.clothes];
-//         const cloth = tempClothes.find(cloth => cloth.slug === slug);
-//         return cloth;
-//     };
-
-
-//     render() {
-//         return (
-//             <ClothesContext.Provider
-//                 value={{ ...this.state,
-//                         getCloth: this.getCloth }}>
-//                 {this.props.children}
-//             </ClothesContext.Provider>
-//         );
-//     }
-// }
-
-// const ClothesConsumer = ClothesContext.Consumer;
-
-// export { ClothesProvider, ClothesConsumer, ClothesContext };
-
-// export function withClothesConsumer(Component){
-//     return function ConsumerWrapper(props){
-//         return (
-//             <ClothesConsumer>
-//                 {value => <Component {...props} content={value}/>}
-//             </ClothesConsumer>
-//         );
-//     };
-// }
-
-
 import React, { Component } from "react";
 import items from "./data";
 //import Client from "./Contentful";
@@ -94,7 +9,17 @@ export default class ClothesProvider extends Component {
     clothes: [],
     sortedClothes: [],
     featuredClothes: [],
-    loading: true
+    loading: true,
+
+    type: "all",
+    capacity: 1,
+    price: 0,
+    minPrice: 0,
+    maxPrice: 0,
+    // minSize: 0,
+    // maxSize: 0,
+    sizeM: false,
+    sizeL: false
   };
 
 
@@ -104,16 +29,16 @@ export default class ClothesProvider extends Component {
     let featuredClothes = clothes.filter(cloth => cloth.featured === true);
     //
     let maxPrice = Math.max(...clothes.map(item => item.price));
-    let maxSize = Math.max(...clothes.map(item => item.size));
+    //let maxSize = Math.max(...clothes.map(item => item.size));
     this.setState({
       clothes,
       featuredClothes,
-      sortedClothes: clothes,
+      sortedClothes: clothes, //if not have this code, Clothes page will not have the list of clothes
       loading: false,
       //
       price: maxPrice,
-      maxPrice,
-      maxSize
+      maxPrice
+      //maxSize
     });
   }
 
@@ -121,7 +46,6 @@ export default class ClothesProvider extends Component {
     let tempItems = items.map(item => {
       let id = item.sys.id;
       let images = item.fields.images.map(image => image.fields.file.url);
-
       let cloth = { ...item.fields, images, id };
       return cloth;
     });
@@ -148,12 +72,13 @@ export default class ClothesProvider extends Component {
   filterClothes = () => {
     let {
       clothes,
+      type,
       capacity,
       price,
-      minSize,
-      maxSize,
-      breakfast,
-      pets
+      // minSize,
+      // maxSize
+      sizeM,
+      sizeL
     } = this.state;
 
     let tempClothes = [...clothes];
@@ -161,14 +86,30 @@ export default class ClothesProvider extends Component {
     // get capacity
     capacity = parseInt(capacity);
     price = parseInt(price);
-   
+    // filter by tyoe
+    if(type !== "all") {
+      tempClothes = tempClothes.filter(cloth => cloth.type === type);
+      console.log(tempClothes);
+    }
+     // filter by capacity
+     if (capacity !== 1) {
+      tempClothes = tempClothes.filter(cloth => cloth.capacity >= capacity);
+    }
     // filter by price
     tempClothes = tempClothes.filter(cloth => cloth.price <= price);
     //filter by size
-    tempClothes = tempClothes.filter(
-      cloth => cloth.size >= minSize && cloth.size <= maxSize
-    );
-    
+    // tempClothes = tempClothes.filter(
+    //   cloth => cloth.size >= minSize && cloth.size <= maxSize
+    // );
+    //filter by breakfast
+    if (sizeM) {
+      tempClothes = tempClothes.filter(cloth => cloth.sizeM === true);
+    }
+    //filter by pets
+    if (sizeL) {
+      tempClothes = tempClothes.filter(cloth => cloth.sizeL === true);
+    }
+  
     this.setState({
       sortedClothes: tempClothes
     });
