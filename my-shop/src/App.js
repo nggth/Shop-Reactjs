@@ -3,7 +3,9 @@ import './App.css';
 
 import Home  from "./pages/Home";
 import Clothes  from "./pages/Clothes";
+import Cart  from "./pages/Cart";
 import SingleClothes  from "./pages/SingleClothes";
+
 import Error  from "./pages/Error";
 import Navbar from "./components/Navbar"; 
 import {Route, Switch} from 'react-router-dom';
@@ -16,6 +18,8 @@ function App() {
       <Route exact path="/" component={Home}/>
       <Route exact path="/clothes" component={Clothes}/>
       <Route exact path="/clothes/:slug" component={SingleClothes}/>
+      <Route exact path="/cart" component={Cart}/>
+
       <Route component={Error} />
     </Switch>
     </>

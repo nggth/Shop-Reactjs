@@ -40,7 +40,7 @@ const ClothesFilter = ({ clothes }) => {
     // ));
     return (
         <section className="filter-container">
-           <Title title="search clothes"/>
+           <Title title="clothes"/>
            <form className="filter-form">
                 {/* select type */}
                 <div className="form-group">

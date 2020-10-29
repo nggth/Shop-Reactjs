@@ -111,6 +111,15 @@ h6 {
   font-size: 1.5rem;
   color: var(--primaryColor);
 }
+.cart-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+#cart-right {
+  padding-left: 750px;
+}
 .nav-links {
   height: 0;
   overflow: hidden;
@@ -131,7 +140,6 @@ h6 {
 .nav-links a:hover {
   color: var(--primaryColor);
 }
-
 .show-nav {
   height: 100px;
 }
@@ -439,7 +447,7 @@ h6 {
 /* end of single clothes*/
 /* clotheslist */
 .clotheslist {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 .clotheslist-center {
   width: 80vw;
@@ -472,7 +480,7 @@ h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
   grid-row-gap: 2rem;
-  grid-column-gap: 40px;
+  grid-column-gap: 140px;
 }
 .form-group {
   text-transform: capitalize;
@@ -480,7 +488,7 @@ h6 {
 .form-group label {
   display: block;
   letter-spacing: var(--mainSpacing);
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 .form-control {
   width: 100%;

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from '../images/logo.jpg'
 import {FaAlignRight} from 'react-icons/fa'
+import {FaShoppingCart} from 'react-icons/fa'
+
 import {Link} from 'react-router-dom'
 
 export default class Navbar extends Component {
@@ -14,6 +16,7 @@ export default class Navbar extends Component {
         return (
         <nav className="navbar">
             <div className="nav-center">
+                {/* Button home */}
                 <div className="nav-header">
                     <Link to="/">
                         <img src={logo} alt="Cecilia"/>
@@ -26,6 +29,8 @@ export default class Navbar extends Component {
                         <FaAlignRight className="nav-icon"/>
                     </button>
                 </div>
+                
+                
                 <ul className={this.state.isOpen ? "nav-links show-nav" : "nav-links" }>
                     <li>
                         <Link to="/">Home</Link>
@@ -33,7 +38,22 @@ export default class Navbar extends Component {
                     <li>
                         <Link to="/clothes">Clothes</Link>
                     </li>
+                    <li id="cart-right">
+                        {/* Button cart */}
+                        <Link to="/cart">
+                            <FaShoppingCart className="nav-icon"/>
+                        </Link>
+                        <button
+                            type="button"
+                            className="nav-btn"
+                            onClick={this.handleToggle}
+                        >
+                        </button>
+                    </li>
                 </ul>
+                    
+                    
+                
             </div>
         </nav>
     );

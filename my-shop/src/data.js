@@ -30,7 +30,7 @@ export default [
       id: "1"
     },
     fields: {
-      name: "single economy",
+      name: "Checked skirt",
       slug: "single-economy",
       type: "single",
       price: 100000,
