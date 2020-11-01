@@ -477,10 +477,11 @@ h6 {
 .filter-form {
   width: 60vw;
   margin: 0 auto;
+  margin-right: 80px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 140px;
+  grid-row-gap: 4rem;
+  grid-column-gap: 120px;
 }
 .form-group {
   text-transform: capitalize;
@@ -488,7 +489,7 @@ h6 {
 .form-group label {
   display: block;
   letter-spacing: var(--mainSpacing);
-  /* margin-bottom: 0.5rem; */
+  margin-bottom: 0.5rem;
 }
 .form-control {
   width: 100%;
