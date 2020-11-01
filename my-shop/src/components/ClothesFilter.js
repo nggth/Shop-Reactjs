@@ -12,12 +12,9 @@ const ClothesFilter = ({ clothes }) => {
     const {
         handleChange,
         type,
-        capacity,
         price,
         minPrice,
         maxPrice,
-        minSize,
-        maxSize,
         sizeM,
         sizeL
     } = context;
@@ -31,13 +28,6 @@ const ClothesFilter = ({ clothes }) => {
         {item}
         </option>
     ));
-    //  // get unique capacity
-    // let people = getUnique(clothes, "capacity");
-    // people = people.map((item, index) => (
-    //     <option key={index} value={item}>
-    //     {item}
-    //     </option>
-    // ));
     return (
         <section className="filter-container">
            <Title title="clothes"/>
@@ -58,40 +48,41 @@ const ClothesFilter = ({ clothes }) => {
                 {/* end of select type */}
                 {/* clothes price */}
                 <div className="form-group">
-                <label htmlFor="price">clothes price: {price} VNĐ</label>
-                <input
-                    type="range"
-                    name="price"
-                    min={minPrice}
-                    max={maxPrice}
-                    id="price"
-                    value={price}
-                    onChange={handleChange}
-                    className="form-control"
-                />
+                    <label htmlFor="price">clothes price: {price} VNĐ</label>
+                    <input
+                        type="range"
+                        name="price"
+                        min={minPrice}
+                        max={maxPrice}
+                        id="price"
+                        value={price}
+                        onChange={handleChange}
+                        className="form-control"
+                    />
                 </div>
                 {/* end of clothes price*/}
                 {/* extras */}
                 <div className="form-group">
-                <div className="single-extra">
-                    <input
-                    type="checkbox"
-                    name="sizeM"
-                    id="sizeM"
-                    checked={sizeM}
-                    onChange={handleChange}
-                    />
-                    <label htmlFor="sizeM">size M</label>
-                </div>
-                <div className="single-extra">
-                    <input
-                    type="checkbox"
-                    name="sizeL"
-                    checked={sizeL}
-                    onChange={handleChange}
-                    />
-                    <label htmlFor="sizeM">size L</label>
-                </div>
+                    <div className="single-extra">
+                        <input
+                        type="checkbox"
+                        name="sizeM"
+                        id="sizeM"
+                        checked={sizeM}
+                        onChange={handleChange}
+                        />
+                        <label htmlFor="sizeM">size M</label>
+                    </div>
+                    
+                    <div className="single-extra">
+                        <input
+                        type="checkbox"
+                        name="sizeL"
+                        checked={sizeL}
+                        onChange={handleChange}
+                        />
+                        <label htmlFor="sizeM">size L</label>
+                    </div>
                 </div>
                 {/* end of extras type */}
             </form>

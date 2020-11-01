@@ -22,9 +22,19 @@ import img17 from "./images/pic17.jpg";
 import img18 from "./images/pic18.jpg";
 import img19 from "./images/pic19.jpg";
 import img20 from "./images/pic20.jpg";
+import img21 from "./images/pic21.jpg";
+import img22 from "./images/pic22.jpg";
+import img23 from "./images/pic23.jpg";
+import img24 from "./images/pic24.jpg";
+import img25 from "./images/pic25.jpg";
+import img26 from "./images/pic26.jpg";
+import img27 from "./images/pic27.jpg";
+import img28 from "./images/pic28.jpg";
+import img29 from "./images/pic29.jpg";
+import img30 from "./images/pic30.jpg";
 
 
-export default [
+const data = [
   {
     sys: {
       id: "1"
@@ -36,7 +46,6 @@ export default [
       price: 100000,
       sizeM: true,
       sizeL: true,
-      capacity: 3,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal",
@@ -87,10 +96,9 @@ export default [
       name: "single basic",
       slug: "single-basic",
       type: "single",
-      price: 150000,
+      price: 170000,
       sizeM: true,
       sizeL: true,
-      capacity: 5,
       featured: false,
       description:
         "Pullover is the oversized sweater everyone is looking for. This pullover comes in a soft shade of sage green with a subtle v neckline and raw edge seams.",
@@ -141,10 +149,9 @@ export default [
       name: "single standard",
       slug: "single-standard",
       type: "single",
-      price: 250000,
+      price: 200000,
       sizeM: false,
       sizeL: true,
-      capacity: 1,
       featured: false,
       description:
         "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
@@ -197,10 +204,9 @@ export default [
       name: "single deluxe",
       slug: "single-deluxe",
       type: "single",
-      price: 300000,
+      price: 320000,
       sizeM: true,
       sizeL: true,
-      capacity: 3,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
@@ -253,10 +259,9 @@ export default [
       name: "double economy",
       slug: "double-economy",
       type: "double",
-      price: 200000,
+      price: 580000,
       sizeM: true,
-      sizeL: true,
-      capacity: 3,
+      sizeL: false,
       featured: false,
       description:
         "The Zarina Collared Dress is the perfect casual yet cute dress for fall! In a beautiful olive green color, this babydoll style dress features a collar and button up front.",
@@ -311,7 +316,6 @@ export default [
       price: 250000,
       sizeM: false,
       sizeL: true,
-      capacity: 4,
       featured: false,
       description:
         "Get to Moab as quick as you can throw this long sleeve on! A loose fitting, cozy ivory pullover with orange colorful Moab desert silhouette is all you'll find here! ",
@@ -362,10 +366,9 @@ export default [
       name: "double standard",
       slug: "double-standard",
       type: "double",
-      price: 300000,
+      price: 380000,
       sizeM: true,
       sizeL: false,
-      capacity: 6,
       featured: false,
       description:
         "Let's be honest, this dress is for anyone with a love for comfy, cute, and fall! This golden-orange dress features a drawstring waist tie, hip pockets, and long sleeves. ",
@@ -419,7 +422,6 @@ export default [
       price: 400000,
       sizeM: true,
       sizeL: true,
-      capacity: 2,
       featured: true,
       description:
         "Nothing to wear isn't in our vocabulary anymore. Be the reason you get up in the morning, and whatever you do; wear the dress. The Bonneville Hills Maxi is everything velvet and bold. ",
@@ -470,7 +472,6 @@ export default [
       price: 300000,
       sizeM: true,
       sizeL: false,
-      capacity: 3,
       featured: false,
       description:
         "It's the small details in life that make it beautiful, the SALT Arcadia Heights Dress has enough details for years of gorgeous moments. High-quality fabric combined with a pintuck bodice, butterfly sleeves, and textured dots give it a regal feeling. ",
@@ -524,8 +525,7 @@ export default [
       price: 150000,
       sizeM: false,
       sizeL: true,
-      capacity: 4,
-      featured: false,
+      featured: true,
       description:
         "Taylor Jane would be a beautiful everyday dress or a stunning dress for a special event. The combination of modest elegance, comfort, and class will have you turning to this wrap maxi dress for all occasions and anything in between!",
       extras: [
@@ -579,8 +579,7 @@ export default [
       type: "family",
       price: 400000,
       sizeM: true,
-      sizeL: false,
-      capacity: 5,
+      sizeL: true,
       featured: false,
       description:
         " Look fashionable and comfortable with exaggerated wide legs, elastic waist, side zipper for easy on/off and of course, pockets. Make your own vibe with a removable waist tie any day of the week. ",
@@ -636,7 +635,6 @@ export default [
       price: 500000,
       sizeM: true,
       sizeL: false,
-      capacity: 6,
       featured: true,
       description:
         "Back, and beautiful as ever, the Taylor Jane is here to keep you trendy and comfortable during any season! A gathered elastic waist with a working tie, paired with short, cuffed sleeves.",
@@ -690,7 +688,6 @@ export default [
       price: 600000,
       sizeM: false,
       sizeL: true,
-      capacity: 10,
       featured: true,
       description:
         "Let's be honest, this dress is for anyone with a love for comfy, cute, and fall! This golden-orange dress features a drawstring waist tie, hip pockets, and long sleeves. ",
@@ -741,10 +738,9 @@ export default [
       name: "presidential",
       slug: "presidential-cloth",
       type: "presidential",
-      price: 650000,
+      price: 270000,
       sizeM: true,
       sizeL: true,
-      capacity: 3,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
@@ -800,7 +796,6 @@ export default [
       price: 300000,
       sizeM: true,
       sizeL: false,
-      capacity: 3,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
@@ -856,7 +851,6 @@ export default [
       price: 350000,
       sizeM: true,
       sizeL: true,
-      capacity: 3,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
@@ -909,7 +903,6 @@ export default [
       price: 350000,
       sizeM: true,
       sizeL: true,
-      capacity: 3,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
@@ -962,7 +955,6 @@ export default [
       price: 350000,
       sizeM: false,
       sizeL: true,
-      capacity: 3,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
@@ -1015,7 +1007,6 @@ export default [
       price: 150000,
       sizeM: true,
       sizeL: true,
-      capacity: 3,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
@@ -1068,7 +1059,6 @@ export default [
       price: 350000,
       sizeM: true,
       sizeL: false,
-      capacity: 3,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
@@ -1110,4 +1100,555 @@ export default [
       ]
     }
   },
+  {
+    sys: {
+      id: "21"
+    },
+    fields: {
+      name: "single standard",
+      slug: "single-standard",
+      type: "single",
+      price: 220000,
+      sizeM: true,
+      sizeL: true,
+      featured: false,
+      description:
+        "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
+      extras: [
+        "Classic collar.",
+        "Long sleeve with buttoned cuffs. Elastic waist.",
+        " Gathered details. Bow on the waist.",
+        "Button fastening on the front section.",
+        "Flared design.",
+        "Side length 104.5 cm.",
+        "Back length 128.5 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img21
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "22"
+    },
+    fields: {
+      name: "single standard",
+      slug: "single-standard",
+      type: "single",
+      price: 280000,
+      sizeM: false,
+      sizeL: true,
+      featured: false,
+      description:
+        "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
+      extras: [
+        "Classic collar.",
+        "Long sleeve with buttoned cuffs. Elastic waist.",
+        " Gathered details. Bow on the waist.",
+        "Button fastening on the front section.",
+        "Flared design.",
+        "Side length 104.5 cm.",
+        "Back length 128.5 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img22
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "23"
+    },
+    fields: {
+      name: "single standard",
+      slug: "single-standard",
+      type: "single",
+      price: 250000,
+      sizeM: true,
+      sizeL: true,
+      featured: false,
+      description:
+        "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
+      extras: [
+        "Classic collar.",
+        "Long sleeve with buttoned cuffs. Elastic waist.",
+        " Gathered details. Bow on the waist.",
+        "Button fastening on the front section.",
+        "Flared design.",
+        "Side length 104.5 cm.",
+        "Back length 128.5 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img23
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "24"
+    },
+    fields: {
+      name: "single standard",
+      slug: "single-standard",
+      type: "single",
+      price: 240000,
+      sizeM: false,
+      sizeL: true,
+      featured: false,
+      description:
+        "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
+      extras: [
+        "Classic collar.",
+        "Long sleeve with buttoned cuffs. Elastic waist.",
+        " Gathered details. Bow on the waist.",
+        "Button fastening on the front section.",
+        "Flared design.",
+        "Side length 104.5 cm.",
+        "Back length 128.5 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img24
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "25"
+    },
+    fields: {
+      name: "presidential",
+      slug: "presidential-cloth",
+      type: "single",
+      price: 250000,
+      sizeM: true,
+      sizeL: true,
+      featured: false,
+      description:
+        "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
+      extras: [
+        "Classic collar.",
+        "Long sleeve with buttoned cuffs. Elastic waist.",
+        " Gathered details. Bow on the waist.",
+        "Button fastening on the front section.",
+        "Flared design.",
+        "Side length 104.5 cm.",
+        "Back length 128.5 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img25
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "26"
+    },
+    fields: {
+      name: "single standard",
+      slug: "single-standard",
+      type: "single",
+      price: 250000,
+      sizeM: true,
+      sizeL: false,
+      featured: false,
+      description:
+        "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
+      extras: [
+        "Classic collar.",
+        "Long sleeve with buttoned cuffs. Elastic waist.",
+        " Gathered details. Bow on the waist.",
+        "Button fastening on the front section.",
+        "Flared design.",
+        "Side length 104.5 cm.",
+        "Back length 128.5 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img26
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "27"
+    },
+    fields: {
+      name: "single standard",
+      slug: "presidential-cloth",
+      type: "single",
+      price: 300000,
+      sizeM: true,
+      sizeL: false,
+      featured: false,
+      description:
+        "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
+      extras: [
+        "Classic collar.",
+        "Long sleeve with buttoned cuffs. Elastic waist.",
+        " Gathered details. Bow on the waist.",
+        "Button fastening on the front section.",
+        "Flared design.",
+        "Side length 104.5 cm.",
+        "Back length 128.5 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img27
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "28"
+    },
+    fields: {
+      name: "single standard",
+      slug: "single-standard",
+      type: "single",
+      price: 300000,
+      sizeM: true,
+      sizeL: true,
+      featured: false,
+      description:
+        "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
+      extras: [
+        "Classic collar.",
+        "Long sleeve with buttoned cuffs. Elastic waist.",
+        " Gathered details. Bow on the waist.",
+        "Button fastening on the front section.",
+        "Flared design.",
+        "Side length 104.5 cm.",
+        "Back length 128.5 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img28
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "29"
+    },
+    fields: {
+      name: "single standard",
+      slug: "single-standard",
+      type: "single",
+      price: 400000,
+      sizeM: false,
+      sizeL: true,
+      featured: false,
+      description:
+        "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
+      extras: [
+        "Classic collar.",
+        "Long sleeve with buttoned cuffs. Elastic waist.",
+        " Gathered details. Bow on the waist.",
+        "Button fastening on the front section.",
+        "Flared design.",
+        "Side length 104.5 cm.",
+        "Back length 128.5 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img29
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "30"
+    },
+    fields: {
+      name: "single standard",
+      slug: "single-standard",
+      type: "single",
+      price: 650000,
+      sizeM: true,
+      sizeL: false,
+      featured: false,
+      description:
+        "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
+      extras: [
+        "Classic collar.",
+        "Long sleeve with buttoned cuffs. Elastic waist.",
+        " Gathered details. Bow on the waist.",
+        "Button fastening on the front section.",
+        "Flared design.",
+        "Side length 104.5 cm.",
+        "Back length 128.5 cm."
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img30
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: slide4
+            }
+          }
+        }
+      ]
+    }
+  },
 ];
+export default data;

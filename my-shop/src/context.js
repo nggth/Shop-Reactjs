@@ -12,7 +12,6 @@ export default class ClothesProvider extends Component {
     loading: true,
 
     type: "all",
-    capacity: 1,
     price: 0,
     minPrice: 0,
     maxPrice: 0,
@@ -41,6 +40,22 @@ export default class ClothesProvider extends Component {
       //maxSize
     });
   }
+  // add to cart 
+  addToCart = () => {
+    const cloth = this.props.cloth;
+
+    let cart = localStorage.getItem("cart");
+
+    if (cart === null) cart = [];
+    else cart = JSON.parse(cart);
+
+    for (let i = 0; i < cart.length; i++)
+      if (cart[i].cloth.id === cloth.id) return;
+
+    cart.push({ cloth: cloth, quantity: 1 });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+  };
 
   formatData(items) {
     let tempItems = items.map(item => {
@@ -73,27 +88,19 @@ export default class ClothesProvider extends Component {
     let {
       clothes,
       type,
-      capacity,
       price,
-      // minSize,
-      // maxSize
       sizeM,
       sizeL
     } = this.state;
 
     let tempClothes = [...clothes];
     // transform values
-    // get capacity
-    capacity = parseInt(capacity);
+    
     price = parseInt(price);
     // filter by tyoe
     if(type !== "all") {
       tempClothes = tempClothes.filter(cloth => cloth.type === type);
       console.log(tempClothes);
-    }
-     // filter by capacity
-     if (capacity !== 1) {
-      tempClothes = tempClothes.filter(cloth => cloth.capacity >= capacity);
     }
     // filter by price
     tempClothes = tempClothes.filter(cloth => cloth.price <= price);
@@ -115,6 +122,9 @@ export default class ClothesProvider extends Component {
     });
   };
   render() {
+    const cloth = this.props.cloth;
+    const updateCartState = this.props.updateCartState;
+    
     return (
       <ClothesContext.Provider
         value={{
