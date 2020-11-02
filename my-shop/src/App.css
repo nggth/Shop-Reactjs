@@ -117,8 +117,9 @@ h6 {
   cursor: pointer;
   outline: none;
 }
+/* cart button is the right */
 #cart-right {
-  padding-left: 750px;
+  padding-left: 650px;
 }
 .nav-links {
   height: 0;

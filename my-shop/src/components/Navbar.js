@@ -38,6 +38,9 @@ export default class Navbar extends Component {
                     <li>
                         <Link to="/clothes">Clothes</Link>
                     </li>
+                    <li>
+                        <Link to="/about">About</Link>
+                    </li>
                     <li id="cart-right">
                         {/* Button cart */}
                         <Link to="/cart">
