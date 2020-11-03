@@ -40,7 +40,7 @@ const data = [
       id: "1"
     },
     fields: {
-      name: "Checked skirt",
+      name: "single economy",
       slug: "single-economy",
       type: "single",
       price: 100000,
@@ -262,7 +262,7 @@ const data = [
       price: 580000,
       sizeM: true,
       sizeL: false,
-      featured: false,
+      featured: true,
       description:
         "The Zarina Collared Dress is the perfect casual yet cute dress for fall! In a beautiful olive green color, this babydoll style dress features a collar and button up front.",
       extras: [
@@ -422,7 +422,7 @@ const data = [
       price: 400000,
       sizeM: true,
       sizeL: true,
-      featured: true,
+      featured: false,
       description:
         "Nothing to wear isn't in our vocabulary anymore. Be the reason you get up in the morning, and whatever you do; wear the dress. The Bonneville Hills Maxi is everything velvet and bold. ",
       extras: [
@@ -525,7 +525,7 @@ const data = [
       price: 150000,
       sizeM: false,
       sizeL: true,
-      featured: true,
+      featured: false,
       description:
         "Taylor Jane would be a beautiful everyday dress or a stunning dress for a special event. The combination of modest elegance, comfort, and class will have you turning to this wrap maxi dress for all occasions and anything in between!",
       extras: [
@@ -635,7 +635,7 @@ const data = [
       price: 500000,
       sizeM: true,
       sizeL: false,
-      featured: true,
+      featured: false,
       description:
         "Back, and beautiful as ever, the Taylor Jane is here to keep you trendy and comfortable during any season! A gathered elastic waist with a working tie, paired with short, cuffed sleeves.",
       extras: [
@@ -688,7 +688,7 @@ const data = [
       price: 600000,
       sizeM: false,
       sizeL: true,
-      featured: true,
+      featured: false,
       description:
         "Let's be honest, this dress is for anyone with a love for comfy, cute, and fall! This golden-orange dress features a drawstring waist tie, hip pockets, and long sleeves. ",
       extras: [
@@ -1059,7 +1059,7 @@ const data = [
       price: 350000,
       sizeM: true,
       sizeL: false,
-      featured: false,
+      featured: true,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
       extras: [
@@ -1327,7 +1327,7 @@ const data = [
     fields: {
       name: "presidential",
       slug: "presidential-cloth",
-      type: "single",
+      type: "presidential",
       price: 250000,
       sizeM: true,
       sizeL: true,
@@ -1436,7 +1436,7 @@ const data = [
     },
     fields: {
       name: "single standard",
-      slug: "presidential-cloth",
+      slug: "single-standard",
       type: "single",
       price: 300000,
       sizeM: true,
@@ -1606,7 +1606,7 @@ const data = [
       price: 650000,
       sizeM: true,
       sizeL: false,
-      featured: false,
+      featured: true,
       description:
         "It's all in the details! Our Lover Detail Dress features dainty embroidery detailing, a cinched waist, and side pockets. This is the dress of our dreams, it's almost too good to be true! This is definitely a piece that will quickly become a favorite in your closet. ",
       extras: [
@@ -1649,6 +1649,6 @@ const data = [
         }
       ]
     }
-  },
+  }
 ];
 export default data;

@@ -253,12 +253,12 @@ h6 {
   grid-row-gap: 0rem;
   grid-column-gap: 20px;
 }
-.service span {
+/* .service span {
   display: inline-block;
   color: var(--primaryColor);
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-}
+} */
 .services > span{
   font-size: 40px;
 }
@@ -286,6 +286,7 @@ h6 {
 
 .featured-clothes {
   padding: 5rem 0;
+  margin-bottom: -2rem;
 }
 .featured-clothes-center {
   width: 80vw;
@@ -524,3 +525,30 @@ h6 {
   }
 }
 /* end of clothes fitler*/
+
+/* start of footer */
+.footer{
+  text-align: center;
+  background: var(--offWhite);
+}
+.footer > span{
+  font-size: 30px;
+}
+.footer-center {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  grid-column-gap: 10px;
+}
+@media screen and (min-width: 200px) {
+  .footer-center {
+    width: 80vw;
+    max-width: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer p {
+    width: 100%;
+  }
+}
+/* end of footer */
