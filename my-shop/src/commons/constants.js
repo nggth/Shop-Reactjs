@@ -1,0 +1,15 @@
+export const ClothObj = {
+    type: 'all',
+    price: 0,
+    minPrice: 0,
+    maxPrice: 0,
+    sizeM: false,
+    sizeL: false
+};
+
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const REMOVE_ITEM = 'REMOVE_ITEM';
+export const SUB_QUANTITY = 'SUB_QUANTITY';
+export const ADD_QUANTITY = 'ADD_QUANTITY';
+export const ADD_SHIPPING = 'ADD_SHIPPING';
+export const SUB_SHIPPING = 'SUB_SHIPPING';

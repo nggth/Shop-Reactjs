@@ -1,92 +1,127 @@
 import React from 'react'
-import { useContext } from 'react';
-import { ClothesContext } from '../context';
 import Title from './Title';
-//get all unique values
-const getUnique = (items, value) => {
-    return [...new Set(items.map(item => item[value]))];
+import { ClothObj } from '../commons/constants';
+
+/**
+ * [Unique item list]
+ * @param  {[Array]} items [Item List]
+ * @param  {[String]} uniqueKey [Unique key]
+ * @return {[Array]}
+ */
+const uniqueItems = (items, uniqueKey) => {
+    return [...new Set(items.map(item => item[uniqueKey]))];
 };
-const ClothesFilter = ({ clothes }) => {
-    // react hooks
-    const context = useContext(ClothesContext);
-    const {
-        handleChange,
-        type,
-        price,
-        minPrice,
-        maxPrice,
-        sizeM,
-        sizeL
-    } = context;
-    //get all unique types
-    let types = getUnique(clothes, "type");
-    //add all types
-    types = ["all", ...types];
-    //map to jsx
-    types = types.map((item, index) => (
-        <option key={index} value={item}>
-        {item}
-        </option>
-    ));
+
+/**
+ * [generateOptionTypes Generate option element]
+ * @return {[Element]}
+ */
+const generateOptionTypes = (types) => {
+    const options = types.map((item, index) => {
+        return <option key={index} value={item}>{item}</option>;
+    });
+
+    return options;
+};
+
+const ClothesFilter = ({ ...props }) => {
+    let state = props.state,
+        types = uniqueItems(props.items, 'type');
+    types = [ClothObj.type, ...types];
+
+    const onHandleChange = (e) => {
+        const target = e.target,
+            name = target.name,
+            value = target.type === 'checkbox' ? target.checked : target.value;
+
+        let filterClothes = [...state.items];
+        // Filter by type
+        if (name === 'type') {
+            if (value !== 'all') {
+                filterClothes = filterClothes.filter(cloth => cloth.type === value);
+            }
+        }
+
+        // Filter by price
+        if (name === 'price') {
+            filterClothes = filterClothes.filter(cloth => cloth.price <= Number(value));
+        }
+
+        // Filter by size
+        if (name === 'sizeM') {
+            filterClothes = filterClothes.filter(cloth => cloth.sizeM === true);
+        }
+
+        if (name === 'sizeL') {
+            filterClothes = filterClothes.filter(cloth => cloth.sizeL === true);
+        }
+
+        // if(name === 'sizeM' && name === 'sizeL') {
+        //     filterClothes = filterClothes.filter(cloth => cloth.sizeM === true && cloth.sizeL === true);
+        // }
+
+        props.setState({
+            [name]: value,
+            filterClothes: filterClothes
+        });
+    };
+
     return (
         <section className="filter-container">
-           <Title title="clothes"/>
-           <form className="filter-form">
-                {/* select type */}
+            <Title title="clothes" />
+            <form className="filter-form">
                 <div className="form-group">
-                <label htmlFor="type">clothes type</label>
-                <select
-                    name="type"
-                    id="type"
-                    onChange={handleChange}
-                    className="form-control"    
-                    value={type}
-                >
-                    {types}
-                </select>
+                    <label htmlFor="type">clothes type</label>
+                    <select
+                        name="type"
+                        id="type"
+                        className="form-control"
+                        value={state.type}
+                        onChange={onHandleChange}
+                    >
+                        {generateOptionTypes(types)}
+                    </select>
                 </div>
-                {/* end of select type */}
-                {/* clothes price */}
+
                 <div className="form-group">
-                    <label htmlFor="price">clothes price: {price} VNĐ</label>
+                    <label htmlFor="price">clothes price: {state.price} VNĐ</label>
                     <input
                         type="range"
                         name="price"
-                        min={minPrice}
-                        max={maxPrice}
+                        min={state.minPrice}
+                        max={state.maxPrice}
                         id="price"
-                        value={price}
-                        onChange={handleChange}
+                        value={state.price}
                         className="form-control"
+                        onChange={onHandleChange}
                     />
                 </div>
-                {/* end of clothes price*/}
-                {/* extras */}
+
                 <div className="form-group">
                     <div className="single-extra">
                         <input
-                        type="checkbox"
-                        name="sizeM"
-                        id="sizeM"
-                        checked={sizeM}
-                        onChange={handleChange}
+                            type="checkbox"
+                            name="sizeM"
+                            id="sizeM"
+                            checked={state.sizeM}
+                            onChange={onHandleChange}
                         />
                         <label htmlFor="sizeM">size M</label>
                     </div>
                     
                     <div className="single-extra">
                         <input
-                        type="checkbox"
-                        name="sizeL"
-                        checked={sizeL}
-                        onChange={handleChange}
+                            type="checkbox"
+                            name="sizeL"
+                            checked={state.sizeL}
+                            onChange={onHandleChange}
                         />
                         <label htmlFor="sizeM">size L</label>
                     </div>
                 </div>
-                {/* end of extras type */}
             </form>
         </section>
     );
 };
+
 export default ClothesFilter;

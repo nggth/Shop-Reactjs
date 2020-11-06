@@ -1,25 +1,20 @@
-import React, { Component } from 'react'
-import { ClothesContext } from "../context";
-import Loading from "./Loading";
-import Cloth from "./Cloth";
-import Title from "./Title";
+import React from 'react';
+import Cloth from './Cloth';
+import Title from './Title';
 
-export default class FeaturedClothes extends Component {
-    static contextType = ClothesContext;
+const FeaturedClothes = ({ ...props }) => {
+    const featuredClothes = props.items.filter(cloth => cloth.featured === true);
 
-    render() {
-        let { loading, featuredClothes: clothes } = this.context;
-        clothes = clothes.map(cloth => {
-            return <Cloth key ={cloth.id} cloth={cloth} />;
-        });
+    return (
+        <section className="featured-clothes">
+            <Title title="featured clothes"/>
+            <div className="featured-clothes-center">
+                {featuredClothes.map(cloth => {
+                    return <Cloth key ={cloth.id} cloth={cloth} />;
+                })}
+            </div>
+        </section>
+    );
+};
 
-        return (
-            <section className="featured-clothes">
-                <Title title="featured clothes"/>
-                <div className="featured-clothes-center">
-                    {loading ? <Loading/> :clothes}
-                </div>
-            </section>
-        );
-    }
-}
+export default FeaturedClothes;

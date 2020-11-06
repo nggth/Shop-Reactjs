@@ -1,13 +1,11 @@
 import React from 'react'
-//import Cloth from "./Cloth";
+import CartCloth from './CartCloth';
 
-import CartCloth from "./CartCloth";
-
-export default function ClothesList({clothes}) {
-    if(clothes.length === 0) { 
+export default function ClothesList({ ...props }) {
+    if(props.clothes.length === 0) { 
         return (
             <div className="empty-search">
-            <h3>Unfortunately no clothes matched your search</h3>
+                <h3>Unfortunately no clothes matched your search</h3>
             </div>
         );
     }
@@ -15,10 +13,10 @@ export default function ClothesList({clothes}) {
     return (
         <section className="clotheslist">
             <div className="clotheslist-center">
-                {clothes.map(item => {
-                    return <CartCloth key={item.id} cloth={item} />;
+                {props.clothes.map(item => {
+                    return <CartCloth { ...props } key={item.id} cloth={item} />;
                 })}
             </div>
         </section>
     );
-}
+};

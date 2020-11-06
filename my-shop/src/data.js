@@ -168,28 +168,21 @@ const data = [
         {
           fields: {
             file: {
-              url: img3
+              url: img27
             }
           }
         },
         {
           fields: {
             file: {
-              url: slide2
+              url: img28
             }
           }
         },
         {
           fields: {
             file: {
-              url: slide3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: slide4
+              url: img18
             }
           }
         }
@@ -223,28 +216,21 @@ const data = [
         {
           fields: {
             file: {
-              url: img4
+              url: img16
             }
           }
         },
         {
           fields: {
             file: {
-              url: slide2
+              url: img14
             }
           }
         },
         {
           fields: {
             file: {
-              url: slide3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: slide4
+              url: img3
             }
           }
         }
@@ -284,21 +270,14 @@ const data = [
         {
           fields: {
             file: {
-              url: slide2
+              url: img19
             }
           }
         },
         {
           fields: {
             file: {
-              url: slide3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: slide4
+              url: img29
             }
           }
         }
@@ -902,7 +881,7 @@ const data = [
       type: "family",
       price: 350000,
       sizeM: true,
-      sizeL: true,
+      sizeL: false,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
@@ -1006,7 +985,7 @@ const data = [
       type: "family",
       price: 150000,
       sizeM: true,
-      sizeL: true,
+      sizeL: false,
       featured: false,
       description:
         "Just like listening to the radio in the morning, this dress is a habit and a must! The Radio Washed Shift Dress comes in two favorite colors, coral and charcoal.",
@@ -1079,21 +1058,14 @@ const data = [
         {
           fields: {
             file: {
-              url: slide2
+              url: img3
             }
           }
         },
         {
           fields: {
             file: {
-              url: slide3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: slide4
+              url: img10
             }
           }
         }
