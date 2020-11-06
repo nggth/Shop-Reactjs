@@ -12,10 +12,6 @@ const mapStateToProps = (state)=> {
 };
 
 class SingleClothes  extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
-
     render() {
         const cloth = this.props.items.find(cloth => cloth.slug === this.props.match.params.slug);
 

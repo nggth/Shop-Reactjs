@@ -50,7 +50,7 @@ class Cart extends Component {
         (
             <div>
                 <Title title="Cart" />
-                <section className="container">
+                <section>
                     <ul className="products img-container-cart">
                     {this.props.items.map(item => {
                          return (

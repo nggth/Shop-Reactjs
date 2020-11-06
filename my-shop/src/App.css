@@ -119,7 +119,7 @@ h6 {
 }
 /* cart button is the right */
 #cart-right {
-  padding-left: 650px;
+  padding-left: 600px;
 }
 .nav-links {
   height: 0;
@@ -670,7 +670,7 @@ h6 {
 
 .promotion > input {
   float: left;
-  width: 90%;
+  width: 80%;
   font-size: 1rem;
   padding: 0.5rem 0 0.5rem 1.8rem;
   border: 2px solid var(--mainBlack);;
@@ -761,10 +761,10 @@ h6 {
   }
 }
  /* --- MEDIUM & LARGE SCREEN --- */
-.container {
+/* .container {
   width: 75%;
   max-width: 960px;
-}
+} */
 
 .thumbnail, .detail {
   float: left;
@@ -784,6 +784,7 @@ h6 {
 
 .checkout, .summary {
   text-align: right;
+  width: 90%;
 }
 .checkout button {
   background-color: var(--primaryColor);
@@ -811,3 +812,13 @@ h6 {
 }
 
 /* end of list cart */
+
+
+/* start of Map  */
+.map {
+	text-align: center;
+  height: 30rem;
+  margin-bottom: 2%;
+}
+
+/* end of map  */

@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Clothes from "./pages/Clothes";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
+import New from "./pages/New";
+
 
 import SingleClothes from "./pages/SingleClothes";
 
@@ -33,6 +35,7 @@ export default class App extends Component {
           </Route>
           <Route exact path="/clothes/:slug" component={SingleClothes} />
           <Route exact path="/cart" component={Cart} />
+          <Route exact path="/new" component={New}/>
           <Route exact path="/about" component={About} />
           
           <Route component={Error} />

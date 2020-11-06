@@ -44,7 +44,7 @@ const data = [
       slug: "single-economy",
       type: "single",
       price: 100000,
-      sizeM: true,
+      sizeM: false,
       sizeL: true,
       featured: false,
       description:
@@ -97,7 +97,7 @@ const data = [
       slug: "single-basic",
       type: "single",
       price: 170000,
-      sizeM: true,
+      sizeM: false,
       sizeL: true,
       featured: false,
       description:
@@ -198,7 +198,7 @@ const data = [
       slug: "single-deluxe",
       type: "single",
       price: 320000,
-      sizeM: true,
+      sizeM: false,
       sizeL: true,
       featured: false,
       description:

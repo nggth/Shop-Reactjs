@@ -38,7 +38,7 @@ class Recipe extends Component {
 
     render() {
         return (
-            <section className="container">
+            <section>
                 <div className="promotion">
                     <label htmlFor="promo-code">Have A Promo Code?</label>
                     <input type="text"/>
@@ -57,10 +57,11 @@ class Recipe extends Component {
                             Total <span>{this.props.total}</span>
                         </li>
                     </ul>
+                    <div className="checkout">
+                        <button type="button">Check Out</button>
+                    </div>
                 </div>
-                <div className="checkout">
-                    <button type="button">Check Out</button>
-                </div>
+                
             </section>
         );
     }
