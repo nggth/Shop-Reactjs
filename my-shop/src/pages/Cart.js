@@ -17,6 +17,7 @@ const mapStateToProps = (state) => {
         items: state.addedItems
     };
 };
+
 // const itemCount = (state) => {
 //     itemCount = state.products.reduce((quantity, product) => {
 //         return quantity + +product.quantity;
@@ -49,37 +50,49 @@ class Cart extends Component {
         (
             <div>
                 <Title title="Cart" />
-                <article className="clotheslist align-cart">
-                    <h5>You have ordered:</h5>
-                    <div className="clotheslist-center">
-                        {this.props.items.map(item => {
-                            return (
-                                <di className="cloth" key={item.id}>
-                                    {/* <div className="img-container"> 
-                                        <img src={item.images[0]} alt={item.name}/>
-                                    </div> */}
-                                    <p className="cloth-info">{item.name}</p>
-                                    <div>
-                                        {/* <scpan className="desc">{item.title}</scpan> */}
-                                        <p>Price: {item.price}VND</p> 
-                                        <p>Quantity: {item.quantity}
-                                        </p>
-                                        <div className="btn-remove">
-                                            <div >
-                                            <Link to="/cart"><button className="btn-font" onClick={() => {this.handleAddQuantity(item.id)}}> + </button></Link>
-                                            <Link to="/cart"><button className="btn-font" onClick={() => {this.handleSubQuantity(item.id)}}> - </button></Link>
-                                            </div>
-                                            <button className="btn-remove" onClick={() => {this.handleRemove(item.id)}}>Remove</button>
-
-                                        </div>
-                                        {/* className="add-remove" */}
-                                       
+                <section className="container">
+                    <ul className="products img-container-cart">
+                    {this.props.items.map(item => {
+                         return (
+                            <li className="row" key={item.id}>
+                                <div className="col left">
+                                    <div className="thumbnail">
+                                    <img src={item.images[0]} alt={item.name}/>
                                     </div>
-                                </di>
-                            )
-                        })}
-                    </div>
-                </article>
+                                    <div className="detail">
+                                        <div className="name">{item.name}</div>
+                                        <div className="price">{item.price} VNĐ</div>
+                                    </div>
+                                </div>
+
+                                <div className="col right">
+                                    <div className="quantity">
+                                        <p>Quantity: {item.quantity}</p>
+                                        <div className="btn-group">
+                                            <Link to="/cart"><button id="btn-add" onClick={() => {this.handleAddQuantity(item.id)}}> + </button></Link>
+                                            <Link to="/cart"><button id="btn-sub" onClick={() => {this.handleSubQuantity(item.id)}}> - </button></Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="remove">
+                                    <svg
+                                        onClick={() => {this.handleRemove(item.id)}}
+                                        version="1.1"
+                                        className="close"
+                                        x="0px"
+                                        y="0px"
+                                        viewBox="0 0 60 60"
+                                        enableBackground="new 0 0 60 60"
+                                    >
+                                        <polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812" />
+                                    </svg>
+                                </div>
+                            </li>
+                         )
+                    })}
+                    </ul>
+                </section>
                 <Recipe />
             </div>
         ) : (
@@ -94,9 +107,9 @@ class Cart extends Component {
         );
 
         return (
-            <div className="container">
+            <div>
                 { addedItems }
-                <Footer />
+                {/* <Footer /> */}
             </div>
         );
     }

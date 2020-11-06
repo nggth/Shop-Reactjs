@@ -38,20 +38,30 @@ class Recipe extends Component {
 
     render() {
         return (
-            <div className="container">
-                <div className="collection">
-                    <li className="collection-item">
-                        <label>
+            <section className="container">
+                <div className="promotion">
+                    <label htmlFor="promo-code">Have A Promo Code?</label>
+                    <input type="text"/>
+                    <button type="button"/>
+                </div>
+                <div className="summary">
+                    <ul>
+                        <li>
+                            Subtotal <span>{this.props.total}</span>
+                        </li>
+                        <li>
                             <input type="checkbox" ref="shipping" onChange={this.handleChecked} />
                             <span>Shipping(+6$)</span>
-                        </label>
-                    </li>
-                    <li className="collection-item"><b>Total: {this.props.total} $</b></li>
+                        </li>
+                        <li className="total">
+                            Total <span>{this.props.total}</span>
+                        </li>
+                    </ul>
                 </div>
                 <div className="checkout">
-                    <button className="waves-effect waves-light btn">Checkout</button>
+                    <button type="button">Check Out</button>
                 </div>
-            </div>
+            </section>
         );
     }
 }

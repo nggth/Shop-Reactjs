@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { ClothObj } from '../commons/constants';
+import Hero from '../components/Hero';
+import Banner from '../components/Banner';
+import { Link } from 'react-router-dom';
 import ClothesList from '../components/ClothesList';
 import ClothesFilter from '../components/ClothesFilter';
 import { addToCart } from '../components/Cart/CartActions';
@@ -41,8 +44,16 @@ class Clothes extends Component {
     render() {
         return (
             <div>
-                <ClothesFilter { ...this.props } state={this.state} setState={this.setState} />
-                <ClothesList { ...this.props } clothes={this.state.filterClothes} />
+                <Hero hero="clothesHero">
+                    <Banner title="Our Clothes" subtitle="A day with bestie">
+                        <Link to='/' className="btn-primary">
+                                our clothes
+                        </Link>
+                    </Banner>
+                </Hero>
+                    <ClothesFilter { ...this.props } state={this.state} setState={this.setState} />
+                    <ClothesList { ...this.props } clothes={this.state.filterClothes} />
+                
                 <Footer />
             </div>
         );

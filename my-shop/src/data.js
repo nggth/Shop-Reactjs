@@ -216,7 +216,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img16
+              url: img4
             }
           }
         },

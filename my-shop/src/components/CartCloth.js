@@ -22,7 +22,7 @@ export default function CartCloth({ ...props }) {
                     <button className="btn-primary cloth-link"
                         onClick= {() => {
                             addToCart(id);
-                            showSuccess()
+                            // showSuccess()
                         }} 
                     >
                         Add to Cart

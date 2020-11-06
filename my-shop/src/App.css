@@ -20,7 +20,7 @@ body {
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: arial, sans-serif;
   line-height: 1.4;
 }
 h1 {
@@ -239,7 +239,7 @@ h6 {
 
 /* services */
 .services {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 .services {
   background: var(--offWhite);
@@ -528,6 +528,7 @@ h6 {
 
 /* start of footer */
 .footer{
+  padding-top: 1rem;
   text-align: center;
   background: var(--offWhite);
 }
@@ -553,24 +554,260 @@ h6 {
 }
 /* end of footer */
 
-.btn-remove {
-  display: inline-block;
-  text-decoration: none;
-  letter-spacing: var(--mainSpacing);
-  color: var(--mainBlack);
-  background: var(--primaryColor);
-  padding: 0 2rem;
-  border: 1.5px solid var(--primaryColor);
-  transition: var(--mainTransition);
-  text-transform: uppercase;
-  cursor: pointer;
+/* start of list cart */
+
+  /* --- PRODUCT LIST --- */
+.products {
+  border-top: 1px solid #ddd;
 }
-.btn-font {
-  margin: 0 0 5% 5%; 
-  padding:0 0 5% 5%;
-  font-size: 30px;
+
+.products > li {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
 }
-.align-cart {
-  padding: 0.5rem 0;
+/* .img-container-cart {
+  position: relative;
+}
+.img-container-cart img {
+  width: 100%;
+  display: block;
+  /* transition: var(--mainTransition);
+} */
+.col img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+.row {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+}
+
+.col, .quantity, .remove {
+  float: left;
+}
+
+.col.left {
+  width: 40%;
+}
+
+.col.right {
+  width: 40%;
+  /* position: absolute; */
+  right: 0;
+}
+
+.detail {
+  padding: 0 0.5rem;
+  line-height: 2.2rem;
+}
+
+.detail .name {
+  font-size: 1.2rem;
+}
+
+.detail .price {
+  font-size: 1.2rem;
+}
+
+.quantity, .remove {
+  width: 20%;
   text-align: center;
 }
+
+.remove svg {
+  width: 60px;
+  height: 60px;
+}
+
+.quantity > input {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: calc(50% - 30px);
+  background: #fff;
+  border: 2px solid #ddd;
+  color: #7f7f7f;
+  text-align: center;
+  font: 600 1.2rem Helvetica, Arial, sans-serif;
+}
+
+.quantity > input:hover, .quantity > input:focus {
+  border-color: #f58551;
+}
+
+.close {
+  fill: #7d7d7d;
+  transition: color 150ms linear,
+    background-color 150ms linear,
+    fill 150ms linear,
+    150ms opacity linear;
+  cursor: pointer;
+}
+
+.close:hover {
+  fill: #f58551;
+}
+
+
+  /* --- SUMMARY --- */
+.promotion, .summary, .checkout {
+  float: left;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+}
+
+.promotion > label {
+  float: left;
+  width: 100%;
+  margin-bottom: 1rem;
+  
+}
+
+.promotion > input {
+  float: left;
+  width: 90%;
+  font-size: 1rem;
+  padding: 0.5rem 0 0.5rem 1.8rem;
+  border: 2px solid var(--mainBlack);;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.promotion:hover > input {
+  border-color: var(--primaryColor);
+}
+
+.promotion > button {
+  float: left;
+  width: 10%;
+  padding: 0.4rem 0;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.promotion:hover > button {
+  border-color: var(--primaryColor);
+  background-color: var(--primaryColor);
+}
+
+.promotion > button::after {
+  content: "\276f";
+  font-size: 1rem;
+}
+
+.summary {
+  font-size: 1.2rem;
+  text-align: right;
+}
+.summary ul {
+  list-style-type: none;
+}
+
+.summary ul li {
+  padding: 0.5rem 0;
+}
+
+.summary ul li span {
+  display: inline-block;
+  width: 30%;
+}
+
+.summary ul li.total {
+  font-weight: bold;
+}
+
+.checkout {
+  text-align: right;
+}
+
+.checkout > button {
+  font-size: 1.2rem;
+  padding: 0.8rem 2.8rem;
+  border-radius: 1.5rem;
+}
+.checkout:hover > button {
+  border-color: var(--primaryColor);
+  background-color: var(--primaryColor);
+}
+
+.empty-product {
+  text-align: center;
+}
+
+.empty-product > button {
+  font-size: 1.3rem; 
+  padding: 10px 30px; 
+  border-radius: 5px;
+}
+
+/* --- SMALL SCREEN --- */
+@media all and (max-width: 599px) {
+  .thumbnail img {
+    display: none;
+  }
+  
+  .quantity > input {
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 20px);
+  }
+  
+  .remove svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+ /* --- MEDIUM & LARGE SCREEN --- */
+.container {
+  width: 75%;
+  max-width: 960px;
+}
+
+.thumbnail, .detail {
+  float: left;
+}
+
+.thumbnail {
+  width: 35%;
+}
+
+.detail {
+  width: 65%;
+}
+
+.checkout {
+  width: 100%;
+}
+
+.checkout, .summary {
+  text-align: right;
+}
+.checkout button {
+  background-color: var(--primaryColor);
+}
+.checkout button:hover {
+  transition: var(--mainTransition);
+}
+/* Button of add and sub of quantity */
+.btn-group {
+  width: 100%;
+}
+.btn-group button {
+  background-color: var(--primaryColor);
+  border: 1px solid var(--mainBlack);
+  color: white;
+  cursor: pointer;
+  float: left;
+  width:49.3%;
+  font-size: 1rem;
+  
+}
+.btn-group button:hover {
+  background-color: #8e6b3e;
+  transition: var(--mainTransition);
+}
+
+/* end of list cart */
