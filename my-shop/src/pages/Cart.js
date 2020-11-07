@@ -18,12 +18,6 @@ const mapStateToProps = (state) => {
     };
 };
 
-// const itemCount = (state) => {
-//     itemCount = state.products.reduce((quantity, product) => {
-//         return quantity + +product.quantity;
-//     }
-// };
-
 const mapDispatchToProps = (dispatch) => {
     return {
         removeItem: (id) => {dispatch(removeItem(id))},
@@ -49,8 +43,8 @@ class Cart extends Component {
         let addedItems = this.props.items.length ?
         (
             <div>
-                <Title title="Cart" />
-                <section>
+                <Title title="Your Cart" />
+                <section className="clotheslist">
                     <ul className="products img-container-cart">
                     {this.props.items.map(item => {
                          return (
@@ -109,7 +103,7 @@ class Cart extends Component {
         return (
             <div>
                 { addedItems }
-                {/* <Footer /> */}
+                <Footer />
             </div>
         );
     }

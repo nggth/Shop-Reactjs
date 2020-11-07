@@ -22,7 +22,7 @@ export default class Footer extends Component {
               <div class="form-group text-footer">
                 <span style={{fontSize:'16px'}}>Đăng kí để nhận ưu đãi mới nhất</span>
                 <span style={{fontSize:'14px'}}>
-                <label>Email: <input type="text"/></label>
+                <label>Email: <input classname="input-email"type="text"/></label>
                 </span>
                 <span style={{fontSize:'10px'}}>CSKH 090292929 | MUA HÀNG 0921234567 | wecare@Cecilia.vn</span>
               </div>

@@ -221,7 +221,8 @@ h6 {
 /* Title */
 .section-title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-top: 1.5rem;
+  /* margin-bottom: 4rem; */
 }
 .section-title h4 {
   font-size: 2rem;
@@ -253,12 +254,6 @@ h6 {
   grid-row-gap: 0rem;
   grid-column-gap: 20px;
 }
-/* .service span {
-  display: inline-block;
-  color: var(--primaryColor);
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-} */
 .services > span{
   font-size: 40px;
 }
@@ -275,7 +270,6 @@ h6 {
     max-width: 1170px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .services p {
     width: 100%;
@@ -283,10 +277,10 @@ h6 {
 }
 /*end of services */
 /* featured clothes */
-
 .featured-clothes {
   padding: 5rem 0;
   margin-bottom: -2rem;
+  margin-top: -2rem;
 }
 .featured-clothes-center {
   width: 80vw;
@@ -317,7 +311,6 @@ h6 {
 .cloth:hover {
   box-shadow: var(--darkShadow);
 }
-
 .img-container {
   position: relative;
 }
@@ -373,7 +366,6 @@ h6 {
 }
 /* end of cloth  */
 /* single cloth*/
-
 .single-cloth {
   padding: 5rem 0 0 0;
 }
@@ -411,7 +403,6 @@ h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
-
 .info h6 {
   font-weight: 300;
 }
@@ -459,7 +450,6 @@ h6 {
   grid-row-gap: 2rem;
   grid-column-gap: 30px;
 }
-
 @media screen and (min-width: 776px) {
   .clotheslist-center {
     width: 90vw;
@@ -530,7 +520,7 @@ h6 {
 .footer{
   padding-top: 1rem;
   text-align: center;
-  background: var(--offWhite);
+  background: var(--mainGrey);
 }
 .footer > span{
   font-size: 30px;
@@ -555,73 +545,52 @@ h6 {
 /* end of footer */
 
 /* start of list cart */
-
-  /* --- PRODUCT LIST --- */
 .products {
   border-top: 1px solid #ddd;
 }
-
 .products > li {
   padding: 1rem;
   border-bottom: 1px solid #ddd;
 }
-/* .img-container-cart {
-  position: relative;
-}
-.img-container-cart img {
-  width: 100%;
-  display: block;
-  /* transition: var(--mainTransition);
-} */
 .col img {
   max-width: 100%;
   vertical-align: middle;
   border-radius: 4px;
 }
-
 .row {
   position: relative;
   overflow: auto;
   width: 100%;
 }
-
 .col, .quantity, .remove {
   float: left;
 }
-
 .col.left {
-  width: 40%;
+  width: 20%;
+  margin-left: 13rem;
 }
-
 .col.right {
   width: 40%;
-  /* position: absolute; */
   right: 0;
 }
-
 .detail {
   padding: 0 0.5rem;
   line-height: 2.2rem;
 }
-
 .detail .name {
   font-size: 1.2rem;
 }
-
 .detail .price {
   font-size: 1.2rem;
 }
-
 .quantity, .remove {
   width: 20%;
   text-align: center;
 }
-
 .remove svg {
   width: 60px;
   height: 60px;
 }
-
 .quantity > input {
   display: inline-block;
   width: 60px;
@@ -634,11 +603,9 @@ h6 {
   text-align: center;
   font: 600 1.2rem Helvetica, Arial, sans-serif;
 }
-
 .quantity > input:hover, .quantity > input:focus {
   border-color: #f58551;
 }
-
 .close {
   fill: #7d7d7d;
   transition: color 150ms linear,
@@ -647,27 +614,24 @@ h6 {
     150ms opacity linear;
   cursor: pointer;
 }
-
 .close:hover {
   fill: #f58551;
 }
 
-
   /* --- SUMMARY --- */
 .promotion, .summary, .checkout {
-  float: left;
-  width: 100%;
+  /* float: left; */
+  width: 50%;
   margin-top: 1.5rem;
   padding: 0 2rem;
+  margin-left: 12rem;
 }
-
 .promotion > label {
   float: left;
   width: 100%;
   margin-bottom: 1rem;
   
 }
-
 .promotion > input {
   float: left;
   width: 80%;
@@ -676,28 +640,23 @@ h6 {
   border: 2px solid var(--mainBlack);;
   border-radius: 2rem 0 0 2rem;
 }
-
 .promotion:hover > input {
   border-color: var(--primaryColor);
 }
-
 .promotion > button {
   float: left;
   width: 10%;
   padding: 0.4rem 0;
   border-radius: 0 2rem 2rem 0;
 }
-
 .promotion:hover > button {
   border-color: var(--primaryColor);
   background-color: var(--primaryColor);
 }
-
 .promotion > button::after {
   content: "\276f";
   font-size: 1rem;
 }
-
 .summary {
   font-size: 1.2rem;
   text-align: right;
@@ -705,24 +664,19 @@ h6 {
 .summary ul {
   list-style-type: none;
 }
-
 .summary ul li {
-  padding: 0.5rem 0;
+  padding: 1rem 0 0 34rem
 }
-
 .summary ul li span {
   display: inline-block;
   width: 30%;
 }
-
 .summary ul li.total {
   font-weight: bold;
 }
-
 .checkout {
   text-align: right;
 }
-
 .checkout > button {
   font-size: 1.2rem;
   padding: 0.8rem 2.8rem;
@@ -732,11 +686,9 @@ h6 {
   border-color: var(--primaryColor);
   background-color: var(--primaryColor);
 }
-
 .empty-product {
   text-align: center;
 }
-
 .empty-product > button {
   font-size: 1.3rem; 
   padding: 10px 30px; 
@@ -761,33 +713,27 @@ h6 {
   }
 }
  /* --- MEDIUM & LARGE SCREEN --- */
-/* .container {
-  width: 75%;
-  max-width: 960px;
-} */
-
 .thumbnail, .detail {
   float: left;
 }
-
 .thumbnail {
   width: 35%;
 }
-
 .detail {
   width: 65%;
 }
-
 .checkout {
   width: 100%;
 }
-
 .checkout, .summary {
   text-align: right;
-  width: 90%;
+  width: 74%;
 }
 .checkout button {
   background-color: var(--primaryColor);
+  width: 27%;
+  margin-left: 40rem;
+  margin-bottom: 2rem;
 }
 .checkout button:hover {
   transition: var(--mainTransition);
@@ -804,21 +750,70 @@ h6 {
   float: left;
   width:49.3%;
   font-size: 1rem;
-  
 }
 .btn-group button:hover {
   background-color: #8e6b3e;
   transition: var(--mainTransition);
 }
-
 /* end of list cart */
 
-
-/* start of Map  */
+/* start of map */
 .map {
 	text-align: center;
   height: 30rem;
   margin-bottom: 2%;
 }
-
 /* end of map  */
+
+
+/* slider*/
+/* Style the container/contact section */
+#img-slider {
+  width:60%;
+  margin-right:2rem;
+}
+.container1 {
+  border-radius: 5px;
+  background-color: #fffdf8;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  /* margin-bottom: 2rem; */
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 43%;
+  margin-top: 6px;
+  padding: 10px;
+}
+.column1 {
+  float: left;
+  width: 36%;
+  margin-top: 6px;
+  margin-left: 7rem;
+  padding: 10px;
+}
+.column2 {
+  float: left;
+  width: 36%;
+  margin-top: 6px;
+  margin-left: 13rem;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* end of slider  */

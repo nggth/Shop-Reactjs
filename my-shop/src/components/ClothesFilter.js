@@ -29,10 +29,27 @@ const ClothesFilter = ({ ...props }) => {
         types = uniqueItems(props.items, 'type');
     types = [ClothObj.type, ...types];
 
+    // handleInputChange = event => {
+    //     const query = event.target.value;
+    
+    //     this.setState(prevState => {
+    //       const filteredData = prevState.data.filter(element => {
+    //         return element.name.toLowerCase().includes(query.toLowerCase());
+    //       });
+    
+    //       return {
+    //         query,
+    //         filteredData
+    //       };
+    //     });
+    //   };
+    
+
     const onHandleChange = (e) => {
         const target = e.target,
             name = target.name,
             value = target.type === 'checkbox' ? target.checked : target.value;
+            
 
         let filterClothes = [...state.items];
         // Filter by type
@@ -55,6 +72,7 @@ const ClothesFilter = ({ ...props }) => {
         if (name === 'sizeL') {
             filterClothes = filterClothes.filter(cloth => cloth.sizeL === true);
         }
+        
 
         // if(name === 'sizeM' && name === 'sizeL') {
         //     filterClothes = filterClothes.filter(cloth => cloth.sizeM === true && cloth.sizeL === true);

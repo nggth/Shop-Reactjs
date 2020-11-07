@@ -5,6 +5,7 @@ import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import Services from '../components/Services';
+import Slider from '../components/Slider';
 
 import FeaturedClothes from '../components/FeaturedClothes';
 
@@ -27,6 +28,7 @@ class Home extends Component {
                 </Hero>
                 <Services />
                 <FeaturedClothes { ...this.props } />
+                <Slider/>
                 <Footer />
             </div>
         );
