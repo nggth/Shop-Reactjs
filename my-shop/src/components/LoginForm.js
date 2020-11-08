@@ -8,7 +8,7 @@ class LoginForm extends Component {
                     <div class="container3">
                         <form action="/action_page.php">
                             <div class="row">
-                                <h2>Login with Social Media or Manually</h2>
+                                <h4>Login with Social Media or Manually</h4>
                                 <div class="vl">
                                     <span class="vl-innertext">or</span>
                                 </div>
