@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import defaultImg from '../images/slide.jpg';
-import Title from './Title';
-
 
 class InfoShop extends Component {
     render() {
         return (
             <div>
-                 <h3 className="section-title">Discover the latest collections from Dottie Premium now!</h3>
+                 <h3 className="section-title">Discover the latest collections from Ceicilia Premium now!</h3>
                 <section id="about">
                     <div class="container1">
                         <div class="row1">

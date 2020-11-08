@@ -58,7 +58,7 @@ class Recipe extends Component {
                         </li>
                     </ul>
                     <div className="checkout">
-                        <button type="button">Check Out</button>
+                        <button type="button">But now!</button>
                     </div>
                 </div>
                 

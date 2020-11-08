@@ -6,6 +6,8 @@ import Clothes from "./pages/Clothes";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
 import New from "./pages/New";
+import Login from './pages/Login';
+
 
 
 import SingleClothes from "./pages/SingleClothes";
@@ -37,7 +39,7 @@ export default class App extends Component {
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/new" component={New}/>
           <Route exact path="/about" component={About} />
-          
+          <Route exact path="/login" component={Login} />
           <Route component={Error} />
         </Switch>
       </>

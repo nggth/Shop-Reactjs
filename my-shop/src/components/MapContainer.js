@@ -12,7 +12,6 @@ const MapContainer = () => {
 					allowFullScreen
 					aria-hidden="false"
 					tabIndex={0}
-					// , marginTop: '20%'
 				/>
 			</div>
 		</div>

@@ -29,21 +29,22 @@ const ClothesFilter = ({ ...props }) => {
         types = uniqueItems(props.items, 'type');
     types = [ClothObj.type, ...types];
 
-    // handleInputChange = event => {
-    //     const query = event.target.value;
-    
-    //     this.setState(prevState => {
-    //       const filteredData = prevState.data.filter(element => {
-    //         return element.name.toLowerCase().includes(query.toLowerCase());
-    //       });
-    
-    //       return {
-    //         query,
-    //         filteredData
-    //       };
+    // const onHandleChangeInput = (e) => {
+    //     const target = e.target,
+    //         name = target.name,
+    //         value = target.type === 'text' ? target.input : target.value;
+        
+    //     let searchClothes = [...state.items];
+    //     if (name === '') {
+    //         if (value !== 'all') {
+    //             searchClothes = searchClothes.includes(cloth => cloth.name === value);
+    //         }
+    //     }
+    //     props.setState({
+    //         [name]: value,
+    //         searchClothes: searchClothes
     //     });
-    //   };
-    
+    // }
 
     const onHandleChange = (e) => {
         const target = e.target,
@@ -72,11 +73,6 @@ const ClothesFilter = ({ ...props }) => {
         if (name === 'sizeL') {
             filterClothes = filterClothes.filter(cloth => cloth.sizeL === true);
         }
-        
-
-        // if(name === 'sizeM' && name === 'sizeL') {
-        //     filterClothes = filterClothes.filter(cloth => cloth.sizeM === true && cloth.sizeL === true);
-        // }
 
         props.setState({
             [name]: value,
@@ -87,7 +83,7 @@ const ClothesFilter = ({ ...props }) => {
     return (
         <section className="filter-container">
             <Title title="clothes" />
-            <form className="filter-form">
+            <div className="filter-form">
                 <div className="form-group">
                     <label htmlFor="type">clothes type</label>
                     <select
@@ -125,9 +121,7 @@ const ClothesFilter = ({ ...props }) => {
                             onChange={onHandleChange}
                         />
                         <label htmlFor="sizeM">size M</label>
-                    </div>
-                    
-                    <div className="single-extra">
+                        <div className="single-extra">
                         <input
                             type="checkbox"
                             name="sizeL"
@@ -135,9 +129,14 @@ const ClothesFilter = ({ ...props }) => {
                             onChange={onHandleChange}
                         />
                         <label htmlFor="sizeM">size L</label>
+                        </div>
                     </div>
                 </div>
-            </form>
+
+                <form class="search" action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search2"></input>
+                </form>
+            </div>
         </section>
     );
 };
