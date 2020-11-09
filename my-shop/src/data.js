@@ -33,16 +33,15 @@ import img28 from "./images/pic28.jpg";
 import img29 from "./images/pic29.jpg";
 import img30 from "./images/pic30.jpg";
 
-
 const data = [
   {
     sys: {
       id: "1"
     },
     fields: {
-      name: "single economy",
+      name: "Váy Caro",
       slug: "single-economy",
-      type: "single",
+      type: "skirt",
       price: 100000,
       sizeM: false,
       sizeL: true,
@@ -93,9 +92,9 @@ const data = [
       id: "2"
     },
     fields: {
-      name: "single basic",
+      name: "Áo tay phồng",
       slug: "single-basic",
-      type: "single",
+      type: "shirt",
       price: 170000,
       sizeM: false,
       sizeL: true,
@@ -146,9 +145,9 @@ const data = [
       id: "3"
     },
     fields: {
-      name: "single standard",
+      name: "Áo thun tay cộc",
       slug: "single-standard",
-      type: "single",
+      type: "shirt",
       price: 200000,
       sizeM: false,
       sizeL: true,
@@ -168,7 +167,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img27
+              url: img3
             }
           }
         },
@@ -194,9 +193,9 @@ const data = [
       id: "4"
     },
     fields: {
-      name: "single deluxe",
+      name: "Đầm tay phồng",
       slug: "single-deluxe",
-      type: "single",
+      type: "dress",
       price: 320000,
       sizeM: false,
       sizeL: true,
@@ -242,9 +241,9 @@ const data = [
       id: "5"
     },
     fields: {
-      name: "double economy",
+      name: "Đầm dự tiệc",
       slug: "double-economy",
-      type: "double",
+      type: "dress",
       price: 580000,
       sizeM: true,
       sizeL: false,
@@ -289,9 +288,9 @@ const data = [
       id: "6"
     },
     fields: {
-      name: "double basic",
+      name: "Đầm dạo phố",
       slug: "double-basic",
-      type: "double",
+      type: "dress",
       price: 250000,
       sizeM: false,
       sizeL: true,
@@ -342,9 +341,9 @@ const data = [
       id: "7"
     },
     fields: {
-      name: "double standard",
+      name: "Jean ôm",
       slug: "double-standard",
-      type: "double",
+      type: "pants",
       price: 380000,
       sizeM: true,
       sizeL: false,
@@ -395,9 +394,9 @@ const data = [
       id: "8"
     },
     fields: {
-      name: "double deluxe",
+      name: "Đầm lụa hoa",
       slug: "double-deluxe",
-      type: "double",
+      type: "dress",
       price: 400000,
       sizeM: true,
       sizeL: true,
@@ -445,9 +444,9 @@ const data = [
       id: "9"
     },
     fields: {
-      name: "family economy",
+      name: "Quần tây công sở",
       slug: "family-economy",
-      type: "family",
+      type: "pants",
       price: 300000,
       sizeM: true,
       sizeL: false,
@@ -498,9 +497,9 @@ const data = [
       id: "10"
     },
     fields: {
-      name: "family basic",
+      name: "Đầm trắng dây",
       slug: "family-basic",
-      type: "family",
+      type: "dress",
       price: 150000,
       sizeM: false,
       sizeL: true,
@@ -553,9 +552,9 @@ const data = [
       id: "11"
     },
     fields: {
-      name: "family standard",
+      name: "Croptop dance",
       slug: "family-standard",
-      type: "family",
+      type: "shirt",
       price: 400000,
       sizeM: true,
       sizeL: true,
@@ -608,9 +607,9 @@ const data = [
       id: "12"
     },
     fields: {
-      name: "family deluxe",
+      name: "Áo thun tay dài",
       slug: "family-deluxe",
-      type: "family",
+      type: "shirt",
       price: 500000,
       sizeM: true,
       sizeL: false,
@@ -661,9 +660,9 @@ const data = [
       id: "13"
     },
     fields: {
-      name: "presidential",
+      name: "Váy dài ôm",
       slug: "presidential-cloth",
-      type: "presidential",
+      type: "skirt",
       price: 600000,
       sizeM: false,
       sizeL: true,
@@ -714,9 +713,9 @@ const data = [
       id: "14"
     },
     fields: {
-      name: "presidential",
+      name: "Đầm sọc dây",
       slug: "presidential-cloth",
-      type: "presidential",
+      type: "dress",
       price: 270000,
       sizeM: true,
       sizeL: true,
@@ -769,9 +768,9 @@ const data = [
       id: "15"
     },
     fields: {
-      name: "family deluxe",
+      name: "Đầm công sở ca-ro",
       slug: "family-deluxe",
-      type: "family",
+      type: "dress",
       price: 300000,
       sizeM: true,
       sizeL: false,
@@ -824,9 +823,9 @@ const data = [
       id: "16"
     },
     fields: {
-      name: "family basic",
+      name: "Áo kiểu bánh bèo",
       slug: "family-basic",
-      type: "family",
+      type: "shirt",
       price: 350000,
       sizeM: true,
       sizeL: true,
@@ -876,9 +875,9 @@ const data = [
       id: "17"
     },
     fields: {
-      name: "family standard",
+      name: "Đầm hoa hồng",
       slug: "family-standard",
-      type: "family",
+      type: "dress",
       price: 350000,
       sizeM: true,
       sizeL: false,
@@ -928,9 +927,9 @@ const data = [
       id: "18"
     },
     fields: {
-      name: "single economy",
+      name: "Sơ mi lụa",
       slug: "single-economy",
-      type: "single",
+      type: "skirt",
       price: 350000,
       sizeM: false,
       sizeL: true,
@@ -980,9 +979,9 @@ const data = [
       id: "19"
     },
     fields: {
-      name: "family basic",
+      name: "Đầm trắng tay dài",
       slug: "family-basic",
-      type: "family",
+      type: "dress",
       price: 150000,
       sizeM: true,
       sizeL: false,
@@ -1032,9 +1031,9 @@ const data = [
       id: "20"
     },
     fields: {
-      name: "single deluxe",
+      name: "Set năng động",
       slug: "single-deluxe",
-      type: "single",
+      type: "set",
       price: 350000,
       sizeM: true,
       sizeL: false,
@@ -1077,9 +1076,9 @@ const data = [
       id: "21"
     },
     fields: {
-      name: "single standard",
+      name: "Váy chữ A có túi",
       slug: "single-standard",
-      type: "single",
+      type: "skirt",
       price: 220000,
       sizeM: true,
       sizeL: true,
@@ -1132,9 +1131,9 @@ const data = [
       id: "22"
     },
     fields: {
-      name: "single standard",
+      name: "Quần jean ống loe",
       slug: "single-standard",
-      type: "single",
+      type: "pants",
       price: 280000,
       sizeM: false,
       sizeL: true,
@@ -1187,9 +1186,9 @@ const data = [
       id: "23"
     },
     fields: {
-      name: "single standard",
+      name: "Set dạo phố đơn giản",
       slug: "single-standard",
-      type: "single",
+      type: "set",
       price: 250000,
       sizeM: true,
       sizeL: true,
@@ -1242,9 +1241,9 @@ const data = [
       id: "24"
     },
     fields: {
-      name: "single standard",
+      name: "Áo kiểu ngang vai",
       slug: "single-standard",
-      type: "single",
+      type: "shirt",
       price: 240000,
       sizeM: false,
       sizeL: true,
@@ -1297,9 +1296,9 @@ const data = [
       id: "25"
     },
     fields: {
-      name: "presidential",
+      name: "Áo đầm tay trong",
       slug: "presidential-cloth",
-      type: "presidential",
+      type: "dress",
       price: 250000,
       sizeM: true,
       sizeL: true,
@@ -1352,9 +1351,9 @@ const data = [
       id: "26"
     },
     fields: {
-      name: "single standard",
+      name: "Sơ mi trắng công sở",
       slug: "single-standard",
-      type: "single",
+      type: "skirt",
       price: 250000,
       sizeM: true,
       sizeL: false,
@@ -1407,9 +1406,9 @@ const data = [
       id: "27"
     },
     fields: {
-      name: "single standard",
+      name: "Váy chữ A",
       slug: "single-standard",
-      type: "single",
+      type: "skirt",
       price: 300000,
       sizeM: true,
       sizeL: false,
@@ -1462,9 +1461,9 @@ const data = [
       id: "28"
     },
     fields: {
-      name: "single standard",
+      name: "Đầm thủy thủ",
       slug: "single-standard",
-      type: "single",
+      type: "dress",
       price: 300000,
       sizeM: true,
       sizeL: true,
@@ -1517,9 +1516,9 @@ const data = [
       id: "29"
     },
     fields: {
-      name: "single standard",
+      name: "Đầm sọc dây",
       slug: "single-standard",
-      type: "single",
+      type: "dress",
       price: 400000,
       sizeM: false,
       sizeL: true,
@@ -1572,9 +1571,9 @@ const data = [
       id: "30"
     },
     fields: {
-      name: "single standard",
+      name: "Set vest công sở",
       slug: "single-standard",
-      type: "single",
+      type: "set",
       price: 650000,
       sizeM: true,
       sizeL: false,

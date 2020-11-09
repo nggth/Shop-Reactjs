@@ -30,9 +30,9 @@ class LoginForm extends Component {
                                     <p>Or sign in manually:</p>
                                     </div>
 
-                                    <input type="text" name="username" placeholder="Username" required></input>
-                                    <input type="password" name="password" placeholder="Password" required></input>
-                                    <input style={{background: '#af9a7d'}} type="submit" value="Login"></input>
+                                    <input style={{fontSize: '17px'}} type="text" name="username" placeholder="Username" required></input>
+                                    <input style={{fontSize: '17px'}} type="password" name="password" placeholder="Password" required></input>
+                                    <input class="btn-primary"style={{background: '#af9a7d'}} type="submit" value="Login"></input>
                                 </div>
                             </div>
                         </form>

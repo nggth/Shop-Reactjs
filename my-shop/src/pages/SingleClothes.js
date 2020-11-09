@@ -29,7 +29,7 @@ class SingleClothes  extends Component {
         return (
             <div>
                 <StyledHero img={cloth.images[0] || defaultBcg}>
-                    <Banner title={`${cloth.name} cloth`}>
+                    <Banner title={`${cloth.name}`}>
                         <Link to="/clothes" className="btn-primary">
                             back to clothes
                         </Link>

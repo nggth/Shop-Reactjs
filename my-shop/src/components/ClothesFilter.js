@@ -29,23 +29,6 @@ const ClothesFilter = ({ ...props }) => {
         types = uniqueItems(props.items, 'type');
     types = [ClothObj.type, ...types];
 
-    // const onHandleChangeInput = (e) => {
-    //     const target = e.target,
-    //         name = target.name,
-    //         value = target.type === 'text' ? target.input : target.value;
-        
-    //     let searchClothes = [...state.items];
-    //     if (name === '') {
-    //         if (value !== 'all') {
-    //             searchClothes = searchClothes.includes(cloth => cloth.name === value);
-    //         }
-    //     }
-    //     props.setState({
-    //         [name]: value,
-    //         searchClothes: searchClothes
-    //     });
-    // }
-
     const onHandleChange = (e) => {
         const target = e.target,
             name = target.name,
@@ -132,10 +115,6 @@ const ClothesFilter = ({ ...props }) => {
                         </div>
                     </div>
                 </div>
-
-                <form class="search" action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search2"></input>
-                </form>
             </div>
         </section>
     );
