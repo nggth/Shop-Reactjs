@@ -55,7 +55,7 @@ export default class Navbar extends Component {
                             </button>
                         </li>
                         <li id="cart-right2">
-                            {/* Button cart */}
+                            {/* Button login */}
                             <Link to="/login">
                                 <FaSignInAlt className="nav-icon" />
                             </Link>

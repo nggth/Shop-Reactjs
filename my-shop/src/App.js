@@ -7,8 +7,11 @@ import Cart from "./pages/Cart";
 import About from "./pages/About";
 import New from "./pages/New";
 import Login from './pages/Login';
+import LoginForm from "./components/LoginForm";
 
-
+import PrivateRoute from './utils/PrivateRoute';
+import PublicRoute from './utils/PublicRoute';
+// import Token from './components/Token';
 
 import SingleClothes from "./pages/SingleClothes";
 
@@ -39,7 +42,8 @@ export default class App extends Component {
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/new" component={New}/>
           <Route exact path="/about" component={About} />
-          <Route exact path="/login" component={Login} />
+          <PublicRoute activeClassName="active" exact path="/login" component={Login} />
+          <PrivateRoute exact path="/loginForm" component={LoginForm} />
           <Route component={Error} />
         </Switch>
       </>
